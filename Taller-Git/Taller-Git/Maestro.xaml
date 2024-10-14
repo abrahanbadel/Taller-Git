@@ -4,9 +4,36 @@
              x:Class="Taller_Git.Maestro"
              Title="Maestro">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+
+        <Label
+            Text="¡Más Comandos!"
+            HorizontalOptions="Center"
+            FontSize="17"
+            Margin="0,20"/>
+
+        <Button 
+            Text="Fetch"
+            Clicked="OnNavigateToFetchPage" 
+            Margin="20,10"
+            BackgroundColor="#8ecae6"
+            FontAttributes="Bold"
+            FontSize="15"/>
+
+        <Button 
+             Text="Push"
+            Clicked="OnNavigateToPushPage"
+            Margin="20,10"
+            BackgroundColor="#219ebc"
+            FontAttributes="Bold"
+            FontSize="15"/>
+
+        <Button 
+             Text="Pull"
+            Clicked="OnNavigateToPullPage"
+             Margin="20,10"
+            BackgroundColor="#023047"
+            TextColor="White"
+            FontAttributes="Bold"
+            FontSize="15"/>
     </VerticalStackLayout>
 </ContentPage>
