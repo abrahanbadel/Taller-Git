@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Taller_Git.Pages.FetchPage"
+             Title="Información Git Fetch">
+    <ScrollView>
+        <VerticalStackLayout Padding="10" Spacing="15">
+
+            <Label Text="Git Fetch"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <Label Text="El comando 'git fetch' en Git se utiliza para descargar los cambios más recientes del repositorio remoto sin fusionarlos automáticamente con tu rama actual. Es ideal para revisar los cambios remotos antes de aplicarlos a tu trabajo local."
+                   FontSize="16" />
+
+            <Label Text="Uso de git fetch:"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="git fetch origin"
+                   FontSize="16"
+                   FontAttributes="Italic"
+                   HorizontalTextAlignment="Center"/>
+
+            <Label Text="Este comando descarga todos los commits, ramas, y cambios del repositorio remoto llamado 'origin'. Sin embargo, no afecta tu rama actual hasta que decidas qué hacer con los cambios descargados."
+                   FontSize="16" />
+
+            <Label Text="Diferencias con git pull:"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="'git pull' realiza una combinación de dos comandos: git fetch seguido de git merge. Esto significa que con git pull descargas los cambios del repositorio remoto y los fusionas automáticamente con tu rama actual. Por el contrario, 'git fetch' solo descarga los cambios sin realizar la fusión."
+                   FontSize="16" />
+
+            <Label Text="¿Cuándo usar git fetch?"
+                   FontSize="20"
+                   FontAttributes="Bold" 
+                   HorizontalTextAlignment="Center"/>
+
+            <Label Text="Utiliza git fetch cuando quieras obtener los últimos cambios de un repositorio remoto sin afectar tu trabajo actual. Puedes revisar los cambios, hacer pruebas o decidir cuándo es el mejor momento para fusionar esos cambios en tu rama local."
+                   FontSize="16" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
