@@ -66,15 +66,27 @@
 	  <MauiXaml Update="Detalle.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+
 	  <MauiXaml Update="Maestro.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+
 	  <MauiXaml Update="Pages\PullPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+
 	  <MauiXaml Update="Pages\PushPage.xaml">
+	  	<Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+
+	  <MauiXaml Update="Pages\CommitPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+
+	  <MauiXaml Update="Pages\FetchPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  
 	</ItemGroup>
 
 </Project>

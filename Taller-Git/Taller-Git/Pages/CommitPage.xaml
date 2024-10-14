@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Taller_Git.Pages.CommitPage"
+             Title="Información Git Commit ">
+    <ScrollView>
+        <VerticalStackLayout Padding="10" Spacing="15">
+
+            <Label Text="¿Qué es git commit?"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <Label Text="'git commit' es uno de los comandos más importantes en Git. Se utiliza para confirmar los cambios en el repositorio local, creando un registro de esos cambios junto con un mensaje descriptivo. Un commit es similar a un punto de control en tu historial de versiones."
+                   FontSize="16" />
+
+            <Label Text="Uso común de 'git commit':"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="git commit -m 'Descripción del commit'"
+                   FontSize="16"
+                   FontAttributes="Italic" />
+
+            <Label Text="El parámetro -m permite agregar un mensaje que describe los cambios. Este mensaje es importante para entender qué modificaciones se hicieron en este commit en particular."
+                   FontSize="16" />
+
+            <Label Text="¿Qué hace un commit?"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Cuando haces un commit, Git toma una instantánea de los cambios en el área de preparación (staging area) y los guarda en el historial del repositorio. Estos cambios quedan guardados localmente hasta que decidas enviarlos al repositorio remoto usando 'git push'."
+                   FontSize="16" />
+
+            <Label Text="Opción de commit sin cambios preparados:"
+                   FontSize="20"
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center"/>
+
+            <Label Text="git commit -a -m 'Descripción del commit'"
+                   FontSize="16"
+                   FontAttributes="Italic" />
+
+            <Label Text="La opción '-a' añade automáticamente todos los archivos modificados al área de preparación, lo que simplifica el proceso al no tener que usar 'git add' antes de hacer el commit."
+                   FontSize="16" />
+
+
+        </VerticalStackLayout>
+    </ScrollView></ContentPage>
