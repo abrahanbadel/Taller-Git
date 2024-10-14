@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Taller_Git.Pages.PullPage"
+             Title="PullPage">
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+
+            <Label Text="Comando Git Pull"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,20" />
+
+
+            <Label Text="¿Qué es git pull?"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   Margin="0,20,0,10" />
+
+            <Label Text="El comando 'git pull' se utiliza para descargar y fusionar (merge) los cambios de un repositorio remoto con tu repositorio local en una sola operación."
+                   FontSize="16"
+                   Margin="0,0,0,20" />
+
+            <Label Text="Funcionamiento"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   Margin="0,20,0,10" />
+
+            <Label Text="El comando 'git pull' es una combinación de dos comandos:" 
+                   FontSize="16"
+                   Margin="0,0,0,10" />
+
+            <Label Text="• git fetch: Descarga los commits y cambios más recientes del repositorio remoto." 
+                   FontSize="16" />
+
+            <Label Text="• git merge: Integra esos cambios en tu rama local actual."
+                   FontSize="16"
+                   Margin="0,0,0,20" />
+
+            <Label Text="Ejemplo de uso"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   Margin="0,20,0,10" />
+
+            <Label Text="git pull origin main"
+                   FontSize="16"
+                   Padding="10"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,20" />
+
+            <Label Text="Este comando descarga los cambios de la rama 'main' del repositorio remoto 'origin' y los fusiona con la rama 'main' de tu repositorio local."
+                   FontSize="16"
+                   Margin="0,0,0,20" />
+
+            <Label Text="Flujo típico de trabajo con git pull"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   Margin="0,20,0,10" />
+
+            <Label Text="1. Otros colaboradores hacen cambios y los envían al repositorio remoto con 'git push'." 
+                   FontSize="16"
+                   LineBreakMode="WordWrap" />
+
+            <Label Text="2. Ejecutas 'git pull' para obtener esos cambios en tu repositorio local." 
+                   FontSize="16"
+                   LineBreakMode="WordWrap" />
+
+            <Label Text="3. Git los fusiona automáticamente con tu rama local actual (si no hay conflictos)."
+                   FontSize="16"
+                   Margin="0,0,0,20"
+                   LineBreakMode="WordWrap" />
+
+            <Label Text="Notas importantes"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   Margin="0,20,0,10" />
+
+            <Label Text="• Si hay conflictos entre los cambios que has hecho y los que se descargan, Git te pedirá que los resuelvas manualmente." 
+                   FontSize="16"
+                   LineBreakMode="WordWrap" />
+
+            <Label Text="• Puedes evitar el merge automático usando 'git fetch' seguido de un 'git merge' manual para tener más control." 
+                   FontSize="16"
+                   LineBreakMode="WordWrap" />
+
+            <Label Text="• Si no deseas una fusión automática, considera usar 'git rebase' después de un pull."
+                   FontSize="16"
+                   Margin="0,10,0,20"
+                   LineBreakMode="WordWrap" />
+
+            <Label Text="¡Sigue aprendiendo para dominar Git!"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,20,0,0" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

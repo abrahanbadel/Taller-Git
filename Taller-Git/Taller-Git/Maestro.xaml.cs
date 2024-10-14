@@ -6,4 +6,11 @@ public partial class Maestro : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void goToPage(ContentPage page)
+    {
+        App.FlyoutPage.Detail.Navigation.PushAsync(page);
+        App.FlyoutPage.IsPresented = false;  // Cierra el menú Flyout después de la navegación
+    }
+
 }
