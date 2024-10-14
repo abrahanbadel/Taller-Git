@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Taller_Git.Pages.PushPage"
+             Title="PushPage">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label 
+            Text="GIT PUSH"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontAttributes="Bold"
+            FontSize="20"
+            Margin="10"/>
+
+            <Label 
+             Text="El comando git push se utiliza para subir los cambios desde el repositorio local al repositorio remoto. Cuando trabajas en un repositorio Git, los commits que haces se guardan solo en tu máquina local. Con git push, envías esos commits al servidor remoto (como GitHub, GitLab, etc.), donde otros colaboradores pueden verlos y acceder a ellos.
+"            Margin="20,0"/>
+            <Label
+            Text="Funcionamiento"
+            Margin="10"
+            HorizontalOptions="Center"
+            FontAttributes="Bold"
+            FontSize="15"/>
+
+            <Grid ColumnDefinitions="70,*" Margin="20,5">
+                <Label Text="Destino : "
+                   Grid.Column="0"
+                   FontAttributes="Bold"/>
+                <Label Text="Normalmente envías los cambios a un repositorio remoto, llamado por defecto origin, a una rama específica."
+                   Grid.Column="1"
+                   HorizontalTextAlignment="Start"/>
+            </Grid>
+
+            <Label Text="Ejemplo de uso:"
+               Margin="20,20,20,10"
+               FontAttributes="Bold"/>
+
+            <Label Text="git push origin main"
+               HorizontalOptions="Center"
+               FontAttributes="Italic"
+               Margin="0,0,0,20"
+               FontSize="16"/>
+
+            <Label Text="Esto envía los commits en la rama main de tu repositorio local a la rama main del repositorio remoto llamado origin.
+"              Margin="20,0"
+               FontSize="10"/>
+
+            <Label Text="Flujo típico de trabajo con git push:"
+               FontAttributes="Bold"
+               Margin="20,30,0,10"/>
+
+            <Label Text="1. Haces cambios en tu código."
+               Margin="25,0"/>
+            <Label Text="2. Los añades al área de preparación con git add."
+               Margin="25,0"/>
+            <Label Text="3. Creas un commit con git commit -m mensaje."
+               Margin="25,0"/>
+            <Label Text="4. Usas git push para enviar esos commits al servidor remoto."
+               Margin="25,0,0,20"/>
+
+            <Label Text="Notas importantes:"
+               FontAttributes="Bold"
+               Margin="20,0"/>
+
+            <Label
+            Text="~ Solo puedes hacer push de cambios que ya has confirmado (commit)."
+            FontAttributes="Italic"
+            FontSize="12"
+            Margin="25,25,0,0"/>
+
+            <Label
+            Text="~ Si hay cambios en el repositorio remoto que no tienes en tu repositorio local, Git puede bloquear el push hasta que hagas un git pull para sincronizarte."
+            FontAttributes="Italic"
+            FontSize="12"
+            Margin="25,0"/>
+
+            <Label
+            Text="~ En algunas configuraciones, Git puede requerir autenticación para poder hacer push (por ejemplo, usando tokens o claves SSH)."
+            FontAttributes="Italic"
+            FontSize="12"
+            Margin="25,0"/>
+        </VerticalStackLayout>
+
+    </ScrollView>
+</ContentPage>
