@@ -35,5 +35,15 @@
             TextColor="White"
             FontAttributes="Bold"
             FontSize="15"/>
+
+        <Button 
+             Text="Commit"
+            Clicked="OnNavigateToCommitPage"
+             Margin="20,10"
+            BackgroundColor="#023047"
+            TextColor="White"
+            FontAttributes="Bold"
+            FontSize="15"/>
+
     </VerticalStackLayout>
 </ContentPage>
