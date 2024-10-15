@@ -13,4 +13,5 @@ public partial class Maestro : ContentPage
         App.FlyoutPage.IsPresented = false;  // Cierra el menú Flyout después de la navegación
     }
 
+
 }
